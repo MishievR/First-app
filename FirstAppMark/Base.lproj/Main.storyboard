@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FirstAppMark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="Qa4-g8-so9">
+                                <rect key="frame" x="-185" y="0.0" width="553" height="702"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoveBg" translatesAutoresizingMaskIntoConstraints="NO" id="GlH-3L-PAW">
+                                <rect key="frame" x="0.0" y="327" width="375" height="352"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doO-lp-Ohx">
+                                <rect key="frame" x="16" y="349" width="343" height="59"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <state key="normal" title="Нажимать может только истинная Сивлуша!">
+                                    <color key="titleColor" red="0.88830818965517244" green="0.24170258620689655" blue="0.87182112068965523" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Sivlusha:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Uk-B9-K9R"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ASTRACOM-APP" translatesAutoresizingMaskIntoConstraints="NO" id="mXO-ae-7R7">
+                                <rect key="frame" x="177" y="646" width="109" height="26"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Love" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-W9-S2k">
+                                <rect key="frame" x="6" y="223" width="362" height="283"/>
+                                <animations/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Name" translatesAutoresizingMaskIntoConstraints="NO" id="zzN-MC-aaT">
+                                <rect key="frame" x="88" y="395" width="198" height="89"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-8V-1wD">
+                                <rect key="frame" x="65" y="617" width="244" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <state key="normal" title="Я не сивлуха, я тут случайно!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="noSivlusha:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZMF-HL-JI9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Astracom" destination="mXO-ae-7R7" id="mZc-ie-Phm"/>
+                        <outlet property="Love" destination="BPx-W9-S2k" id="is1-yr-2aP"/>
+                        <outlet property="LoveBg" destination="GlH-3L-PAW" id="8LP-Bv-r9A"/>
+                        <outlet property="Name" destination="zzN-MC-aaT" id="v5G-hh-i6c"/>
+                        <outlet property="noPress" destination="gFl-8V-1wD" id="aW3-bn-ddd"/>
+                        <outlet property="pressForLove" destination="doO-lp-Ohx" id="Fld-oZ-PsG"/>
+                        <outlet property="rain" destination="Qa4-g8-so9" id="Wk3-zr-pOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460.5" y="347.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ASTRACOM-APP" width="953" height="111"/>
+        <image name="Love" width="730" height="102"/>
+        <image name="LoveBg" width="1667" height="1667"/>
+        <image name="Name" width="412" height="115"/>
+        <image name="Rain" width="1667" height="1667"/>
+    </resources>
+</document>
